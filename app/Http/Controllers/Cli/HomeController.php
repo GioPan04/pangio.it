@@ -16,6 +16,13 @@ class HomeController extends Controller
     public function blog(Request $request)
     {
         $posts = Post::all();
-        return view('cli.blog', ['posts' => $posts]);
+        return view('cli.blog.list', ['posts' => $posts]);
+    }
+
+    public function show_post(Request $request, string $slug)
+    {
+        $post = Post::query()->where('slug', $slug)->first();
+        if(!$post) return view('cli.blog.error', ['slug' => $slug]);
+        return view('cli.blog.show', ['post' => $post]);
     }
 }
