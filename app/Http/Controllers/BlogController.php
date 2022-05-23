@@ -9,13 +9,13 @@ class BlogController extends Controller
 {
     public function list(Request $request)
     {
-        $posts = Post::orderBy('id', 'desc')->simplePaginate(10);
+        $posts = Post::query()->orderBy('id', 'desc')->simplePaginate(10);
         return response()->json($posts);
     }
 
     public function show(Request $request, string $slug)
     {
-        $post = Post::where('slug', $slug)->firstOrFail();
+        $post = Post::query()->where('slug', $slug)->firstOrFail();
         return response($post->content());
     }
 }
