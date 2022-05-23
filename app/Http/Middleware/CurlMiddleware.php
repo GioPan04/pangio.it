@@ -19,7 +19,10 @@ class CurlMiddleware
         // Curl eg header: curl/7.83.1
         $user_agent = $request->header('User-Agent', 'curl');
         if(substr($user_agent, 0, 4) === 'curl') {
-            return $next($request);
+            $response = $next($request);
+            $response->header('Content-Type', 'text/plain; charset=utf-8');
+
+            return $response;
         } else {
             return redirect()->route('home');
         }
