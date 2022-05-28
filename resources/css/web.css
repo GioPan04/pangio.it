@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.blinking-cursor::after {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 3px;
+    background-color: #fff;
+    animation: blinking-cursor-anim 1s step-end infinite;
+    -webkit-animation: blinking-cursor-anim 1s step-end infinite;
+}
+
+@keyframes blinking-cursor-anim {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
