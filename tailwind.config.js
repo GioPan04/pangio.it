@@ -7,6 +7,7 @@ module.exports = {
         extend: {
             fontFamily: {
                 '8-bit': ['"Press Start 2P"', 'cursive'],
+                'body': ['Comfortaa', 'cursive'],
             },
             colors: {
                 primary: '#0D1821',
