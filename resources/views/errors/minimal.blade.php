@@ -10,7 +10,7 @@
         <title>@yield('title') - Gioele Pannetto</title>
     </head>
     <body class="bg-primary font-body">
-        <div class="border-l-8 border-secondary h-screen text-white p-10 flex flex-col justify-center items-center">
+        <div class="border-l-8 border-secondary h-screen text-white p-10 flex flex-col justify-center items-center text-center">
             <h1 class="font-8-bit text-6xl">Error @yield('code')</h1>
             <span class="block mt-4 text-white/90">@yield('message')</span>
             <div class="mt-8">
