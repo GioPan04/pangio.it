@@ -11,7 +11,7 @@
 </div>
 <div class="container mx-auto">
     <section>
-        <h1 class="text-3xl font-8-bit">$ whoami</h1>
+        <h1 class="text-3xl font-8-bit">whoami</h1>
         <div class="flex space-x-14 mt-8">
             <img class="object-cover object-top rounded-full aspect-square w-96 h-96" src="/me.jpg" alt="me"/>
             <p>
