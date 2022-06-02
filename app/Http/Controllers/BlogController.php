@@ -18,6 +18,8 @@ class BlogController extends Controller
     public function show(Request $request, string $slug)
     {
         $post = Post::query()->where('slug', $slug)->firstOrFail();
-        return response($post->content());
+        return view('pages.post', [
+            'post' => $post
+        ]);
     }
 }

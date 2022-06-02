@@ -13,8 +13,17 @@ module.exports = {
                 primary: '#0D1821',
                 secondary: '#E03616',
                 accent: '#008148',
+            },
+            typography: {
+                DEFAULT: {
+                    css: {
+                        color: '#fff'
+                    }
+                }
             }
         },
     },
-    plugins: [],
+    plugins: [
+        require('@tailwindcss/typography')
+    ],
 }
