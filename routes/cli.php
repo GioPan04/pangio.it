@@ -7,6 +7,6 @@ use Illuminate\Support\Facades\Route;
     Route::get('/{slug}', 'BlogController@show')->name('blog::show');
 }); */
 
-Route::get('/', 'HomeController@index');
-Route::get('/blog', 'HomeController@blog');
-Route::get('/blog/{slug}', 'HomeController@show_post');
+Route::get('/', 'CurlController@index');
+Route::get('/blog', 'CurlController@blog');
+Route::get('/blog/{slug}', 'CurlController@show_post');

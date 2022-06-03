@@ -39,7 +39,7 @@ class RouteServiceProvider extends ServiceProvider
 
             Route::prefix('cli')
                 ->middleware('curl')
-                ->namespace('App\Http\Controllers\Cli')
+                ->namespace('App\Http\Controllers')
                 ->group(base_path('routes/cli.php'));
         });
     }
