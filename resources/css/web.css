@@ -18,6 +18,17 @@
     -webkit-animation: floating-anim 5s ease-in-out infinite;
 }
 
+.timeline-content {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 500ms ease-out;
+}
+
+.timeline-shown {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
 @keyframes floating-anim {
     0%, 100% {
         transform: translateY(-15px);

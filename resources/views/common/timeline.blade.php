@@ -1,7 +1,7 @@
-<div class="grid grid-cols-timeline">
+<div class="grid grid-cols-timeline timeline">
     @foreach ($items as $item)
         @if($loop->index % 2 == 0)
-        <div class="pt-4 pb-16 last:pb-0">{{ $item['data'] }}</div>
+        <div class="timeline-content pt-4 pb-16 last:pb-0">{{ $item['data'] }}</div>
         @else
         <div></div>
         @endif
@@ -12,7 +12,7 @@
         </div>
 
         @if($loop->index % 2 != 0)
-        <div class="pt-4 pb-16 last:pb-0">{{ $item['data'] }}</div>
+        <div class="timeline-content pt-4 pb-16 last:pb-0">{{ $item['data'] }}</div>
         @else
         <div></div>
         @endif
