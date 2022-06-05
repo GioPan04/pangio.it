@@ -12,6 +12,22 @@
     -webkit-animation: blinking-cursor-anim 1s step-end infinite;
 }
 
+.floating {
+    transform: translateY(-15px);
+    animation: floating-anim 5s ease-in-out infinite;
+    -webkit-animation: floating-anim 5s ease-in-out infinite;
+}
+
+@keyframes floating-anim {
+    0%, 100% {
+        transform: translateY(-15px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+}
+
 @keyframes blinking-cursor-anim {
     0%, 100% {
         opacity: 1;

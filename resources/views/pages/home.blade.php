@@ -2,12 +2,17 @@
 @section('page::title', 'Home')
 
 @section('page::body')
-<div class="h-screen flex flex-col justify-center items-center">
+<div class="h-screen relative flex flex-col justify-center items-center">
     <div class="font-8-bit">
         <span class="text-4xl block">Hi!</span>
         <span class="text-2xl blinking-cursor block">I'm <span class="text-secondary">Gioele Pannetto</span></span>
         <span class="text-center text-xs block mt-2 text-white/90">FULL STACK DEVELOPER</span>
     </div>
+    <span class="absolute bottom-[5.75rem] opacity-70 floating">
+        <i data-feather="chevron-down"></i>
+    </span>
+    <span class="absolute bottom-[4.5rem] text-center text-xs opacity-70">Scroll down to continue</span>
+
 </div>
 <div class="container mx-auto space-y-16">
     <section>
