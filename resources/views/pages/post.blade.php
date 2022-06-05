@@ -2,6 +2,7 @@
 @section('page::title', $post->title)
 
 @section('page::body')
+@include('common.socialbar')
 <div class="container mx-auto">
     <div class="text-white/60 text-sm flex justify-between my-4">
         <a class="hover:underline" href="{{ $post->link }}">{{ $post->slug }}</a>

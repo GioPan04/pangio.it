@@ -2,6 +2,7 @@
 @section('page::title', 'Blog')
 
 @section('page::body')
+@include('common.socialbar')
 <main class="container mx-auto">
     @foreach ($posts as $post)
     <a href="{{ $post->link }}">

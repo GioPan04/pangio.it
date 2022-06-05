@@ -2,6 +2,7 @@
 @section('page::title', 'Home')
 
 @section('page::body')
+@include('common.socialbar')
 <div class="h-screen relative flex flex-col justify-center items-center">
     <div class="font-8-bit">
         <span class="text-4xl block">Hi!</span>
