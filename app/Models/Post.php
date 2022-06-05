@@ -40,4 +40,10 @@ class Post extends Model
     {
         return Storage::get('posts/' . $this->id . '.md');
     }
+
+    public function small_content()
+    {
+        $content = $this->content();
+        return implode(PHP_EOL, array_slice(explode(PHP_EOL, $content), 0, 20));
+    }
 }

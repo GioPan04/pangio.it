@@ -9,11 +9,11 @@
         <span class="text-center text-xs block mt-2 text-white/90">FULL STACK DEVELOPER</span>
     </div>
 </div>
-<div class="container mx-auto">
+<div class="container mx-auto space-y-16">
     <section>
-        <h1 class="text-3xl font-8-bit">whoami</h1>
-        <div class="flex space-x-14 mt-8">
-            <img class="object-cover object-top rounded-full aspect-square w-96 h-96" src="/me.jpg" alt="me"/>
+        <h1 id="whoami" class="text-3xl font-8-bit">whoami</h1>
+        <div class="flex space-x-14 mt-8 items-center">
+            <img class="object-cover object-top rounded-full aspect-square w-72 h-72" src="/me.jpg" alt="me"/>
             <p>
                 Hi! I'm Gioele Pannetto, a 17 years old programming enthusiast boy.
                 I have this passion since I was 3 years old, the year my father gifted me my first computer.
@@ -23,6 +23,20 @@
                 I hope to help you as well!
             </p>
         </div>
+    </section>
+    <section>
+        <h1 id="timeline" class="text-3xl font-8-bit">My timeline</h1>
+        @include('common.timeline', ['items' => [
+            [
+                'data' => "Started studying IT at I.S.I.S. P. Gobetti - A. Volta. A high school in Florence, Italy.",
+                'year' => 2018
+            ],
+            [
+                'data' => "Started working for Insegreto, an Italian social network where you can share secrets anonymously. I worked as fullstack developer, we updated the website and we beginned to working to the app.",
+                'year' => 2020
+            ],
+        ]])
+
     </section>
 </div>
 @endsection

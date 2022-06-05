@@ -20,6 +20,9 @@ module.exports = {
                         color: '#fff'
                     }
                 }
+            },
+            gridTemplateColumns: {
+                timeline: '1fr 200px 1fr'
             }
         },
     },
