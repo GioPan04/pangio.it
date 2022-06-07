@@ -11,3 +11,7 @@ Route::prefix('/blog')->group(function () {
 
 Route::view('/auth/login', 'pages.login')->name('login');
 Route::post('/auth/login', 'AuthController@authenticate');
+
+Route::group(['middleware' => 'auth', 'prefix' => '/dashboard'], function () {
+    Route::view('/', 'pages.dashboard.home')->name('dashboard::index');
+});
