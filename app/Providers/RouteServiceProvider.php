@@ -33,14 +33,17 @@ class RouteServiceProvider extends ServiceProvider
                 ->prefix('api')
                 ->group(base_path('routes/api.php'));
 
-            Route::middleware('web')
-                ->namespace('App\Http\Controllers')
-                ->group(base_path('routes/web.php'));
+            $user_agent = $this->app->request->header('User-Agent', 'curl');
+            if(substr($user_agent, 0, 4) === 'curl') {
+                Route::middleware('curl')
+                    ->namespace('App\Http\Controllers')
+                    ->group(base_path('routes/cli.php'));
+            } else {
+                Route::middleware('web')
+                    ->namespace('App\Http\Controllers')
+                    ->group(base_path('routes/web.php'));
+            }
 
-            Route::prefix('cli')
-                ->middleware('curl')
-                ->namespace('App\Http\Controllers')
-                ->group(base_path('routes/cli.php'));
         });
     }
 
