@@ -10,11 +10,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
-<body class="bg-primary text-white font-body mt-16 mb-8">
+<body class="bg-primary text-white font-body">
 @include('common.navbar')
-@section('page::body')
-Oh no
-@show
+
+<div class="mt-16 mb-10">
+    @section('page::body')
+    Oh no
+    @show
+</div>
+
+<footer class="mb-5 text-xs text-white/60 space-y-1">
+    <span class="text-center block">Copyright © {{ now()->format('Y') }}. All rights reserved</span>
+    <span class="text-center block">Designed and Developed by Gioele Pannetto. Get the source code <a target="_blank" href="https://github.com/GioPan04/pangio.it">here</a></span>
+</footer>
 
 <script src="{{ asset('js/app.js') }}"></script>
 </body>
