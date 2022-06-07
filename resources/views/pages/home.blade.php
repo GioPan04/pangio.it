@@ -15,10 +15,10 @@
     <span class="absolute bottom-[4.5rem] text-center text-xs opacity-70">Scroll down to continue</span>
 
 </div>
-<div class="container sm:px-12 mx-auto space-y-16">
+<div class="container px-8 sm:px-12 mx-auto space-y-16">
     <section>
         <h1 id="whoami" class="text-3xl font-8-bit">whoami</h1>
-        <div class="flex space-x-14 mt-8 items-center">
+        <div class="flex flex-col sm:flex-row sm:space-x-14 mt-8 items-center">
             <img class="object-cover object-top rounded-full aspect-square w-72 h-72" src="/me.jpg" alt="me"/>
             <p>
                 Hi! I'm Gioele Pannetto, a 17 years old programming enthusiast boy.
