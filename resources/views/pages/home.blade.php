@@ -15,7 +15,7 @@
     <span class="absolute bottom-[4.5rem] text-center text-xs opacity-70">Scroll down to continue</span>
 
 </div>
-<div class="container mx-auto space-y-16">
+<div class="container sm:px-12 mx-auto space-y-16">
     <section>
         <h1 id="whoami" class="text-3xl font-8-bit">whoami</h1>
         <div class="flex space-x-14 mt-8 items-center">

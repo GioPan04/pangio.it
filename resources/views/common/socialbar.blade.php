@@ -1,4 +1,4 @@
-<ul class="fixed bottom-3 left-3 space-y-3 z-10">
+<ul class="hidden lg:block fixed bottom-3 left-3 space-y-3 z-10">
     <li class="opacity-50 hover:opacity-100 transition-opacity duration-200">
         <a href="https://github.com/GioPan04" target="_blank">
             <i data-feather="github"></i>
