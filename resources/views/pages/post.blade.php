@@ -22,5 +22,21 @@
     <div class="prose max-w-none prose-pre:p-4 prose-invert">
         {!! app(Spatie\LaravelMarkdown\MarkdownRenderer::class)->toHtml($post->content()) !!}
     </div>
+
+    <script src="https://giscus.app/client.js"
+        data-repo="GioPan04/pangio.it"
+        data-repo-id="R_kgDOHYvRiA"
+        data-category="Blog comments"
+        data-category-id="DIC_kwDOHYvRiM4CPiSa"
+        data-mapping="og:title"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="dark"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+    </script>
 </div>
 @endsection
