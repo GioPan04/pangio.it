@@ -10,6 +10,8 @@
 <meta property="article:author" content="Gioele Pannetto" />
 @endsection
 
+@section('page::description', $post->description)
+
 @section('page::body')
 @include('common.socialbar')
 <div class="container mx-auto">

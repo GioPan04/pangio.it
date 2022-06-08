@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <meta name="og:site_name" content="Gioele Pannetto">
+    <meta name="description" content="@yield('page::description', 'The official website of Gioele Pannetto')"/>
     <title>@yield('page::title') - Gioele Pannetto</title>
     @yield('page::head')
     <link rel="stylesheet" href="{{ asset('css/web.css') }}"/>
