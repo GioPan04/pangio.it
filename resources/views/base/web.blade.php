@@ -24,7 +24,7 @@
 
 <footer class="mb-5 text-xs text-white/60 space-y-1">
     <span class="text-center block">Copyright © {{ now()->format('Y') }}. All rights reserved</span>
-    <span class="text-center block">Designed and Developed by Gioele Pannetto. Get the source code <a target="_blank" href="https://github.com/GioPan04/pangio.it">here</a></span>
+    <span class="text-center block">Designed and Developed by Gioele Pannetto. <a target="_blank" href="https://github.com/GioPan04/pangio.it">Get the source code here</a></span>
 </footer>
 
 <script src="{{ asset('js/app.js') }}"></script>
