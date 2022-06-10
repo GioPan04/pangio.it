@@ -15,3 +15,5 @@ Route::post('/auth/login', 'AuthController@authenticate');
 Route::group(['middleware' => 'auth', 'prefix' => '/dashboard'], function () {
     Route::view('/', 'pages.dashboard.home')->name('dashboard::index');
 });
+
+Route::redirect('/wp-admin', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');

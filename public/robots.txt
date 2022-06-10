@@ -2,3 +2,4 @@ User-agent: *
 Disallow: /auth/
 Disallow: /dashboard/
 Disallow: /go/
+Disallow: /wp-admin/
