@@ -27,6 +27,6 @@
     <span class="text-center block">Designed and Developed by Gioele Pannetto. <a target="_blank" href="https://github.com/GioPan04/pangio.it">Get the source code here</a></span>
 </footer>
 
-<script src="{{ asset('js/app.js') }}"></script>
+<script src="{{ asset('js/app.js') }}" defer=""></script>
 </body>
 </html>
