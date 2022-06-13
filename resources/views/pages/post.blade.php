@@ -5,6 +5,7 @@
 <meta property="og:title" content="{{ $post->title }}" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="{{ $post->link }}" />
+<meta property="og:image" content="{{ route('blog::show::thumbnail', ['slug' => $post->slug]) }}" />
 <meta property="article:published_time" content="{{ $post->created_at->toIso8601String() }}" />
 <meta property="article:modified_time" content="{{ $post->updated_at->toIso8601String() }}" />
 <meta property="article:author" content="Gioele Pannetto" />
