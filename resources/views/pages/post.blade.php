@@ -19,7 +19,7 @@
         <a class="hover:underline" href="{{ $post->link }}">{{ $post->slug }}</a>
         <span title="{{ $post->created_at->format('d/m/Y H:i') }}">Published at {{ $post->created_at->format('d/m/Y') }}</span>
     </div>
-    <div class="prose max-w-none prose-pre:p-4 prose-invert prose-img:max-w-5xl prose-img:mx-auto">
+    <div class="prose max-w-none prose-pre:p-4 prose-invert prose-img:max-w-5xl prose-img:mx-auto mb-10">
         {!! app(Spatie\LaravelMarkdown\MarkdownRenderer::class)->toHtml($post->content()) !!}
     </div>
 
