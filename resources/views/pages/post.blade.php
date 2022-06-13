@@ -19,7 +19,7 @@
         <a class="hover:underline" href="{{ $post->link }}">{{ $post->slug }}</a>
         <span title="{{ $post->created_at->format('d/m/Y H:i') }}">Published at {{ $post->created_at->format('d/m/Y') }}</span>
     </div>
-    <div class="prose max-w-none prose-pre:p-4 prose-invert">
+    <div class="prose max-w-none prose-pre:p-4 prose-invert prose-img:max-w-5xl prose-img:mx-auto">
         {!! app(Spatie\LaravelMarkdown\MarkdownRenderer::class)->toHtml($post->content()) !!}
     </div>
 
@@ -29,7 +29,7 @@
         data-category="Blog comments"
         data-category-id="DIC_kwDOHYvRiM4CPiSa"
         data-mapping="og:title"
-        data-reactions-enabled="1"
+        data-reactions-enabled="0"
         data-emit-metadata="0"
         data-input-position="top"
         data-theme="dark"
