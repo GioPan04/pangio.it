@@ -8,7 +8,7 @@
     <meta name="description" content="@yield('page::description', 'The official website of Gioele Pannetto')"/>
     <title>@yield('page::title') - Gioele Pannetto</title>
     @yield('page::head')
-    <link rel="stylesheet" href="{{ asset('css/web.css') }}"/>
+    <link rel="stylesheet" href="{{ mix('css/web.css') }}"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
@@ -27,6 +27,6 @@
     <span class="text-center block">Designed and Developed by Gioele Pannetto. <a target="_blank" href="https://github.com/GioPan04/pangio.it">Get the source code here</a></span>
 </footer>
 
-<script src="{{ asset('js/app.js') }}" defer=""></script>
+<script src="{{ mix('js/app.js') }}" defer=""></script>
 </body>
 </html>
