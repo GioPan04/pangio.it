@@ -3,7 +3,7 @@
 
 @section('page::body')
 @include('common.socialbar')
-<main class="container mx-auto">
+<main class="container mx-auto px-8 sm:px-12">
     @forelse ($posts as $post)
     <a href="{{ $post->link }}">
         <h3 class="text-2xl font-bold">{{ $post->title }}</h3>

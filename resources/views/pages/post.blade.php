@@ -14,12 +14,12 @@
 
 @section('page::body')
 @include('common.socialbar')
-<div class="container mx-auto">
+<div class="container mx-auto px-8 sm:px-12">
     <div class="text-white/60 text-sm flex justify-between my-4">
         <a class="hover:underline" href="{{ $post->link }}">{{ $post->slug }}</a>
         <span title="{{ $post->created_at->format('d/m/Y H:i') }}">Published at {{ $post->created_at->format('d/m/Y') }}</span>
     </div>
-    <div class="prose max-w-none prose-pre:p-4 prose-invert prose-img:max-w-5xl prose-img:mx-auto mb-10">
+    <div class="prose max-w-none prose-pre:p-4 prose-invert prose-img:xl:max-w-5xl prose-img:mx-auto mb-10">
         {!! app(Spatie\LaravelMarkdown\MarkdownRenderer::class)->toHtml($post->content()) !!}
     </div>
 
