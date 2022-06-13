@@ -9,6 +9,13 @@
 <meta property="article:published_time" content="{{ $post->created_at->toIso8601String() }}" />
 <meta property="article:modified_time" content="{{ $post->updated_at->toIso8601String() }}" />
 <meta property="article:author" content="Gioele Pannetto" />
+
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="pangio.it">
+<meta property="twitter:url" content="{{ $post->link }}">
+<meta name="twitter:title" content="{{ $post->title }}">
+<meta name="twitter:description" content="{{ $post->description }}">
+<meta name="twitter:image" content="{{ route('blog::show::thumbnail', ['slug' => $post->slug]) }}">
 @endsection
 
 @section('page::description', $post->description)
