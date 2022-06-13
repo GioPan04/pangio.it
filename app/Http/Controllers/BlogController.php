@@ -28,20 +28,23 @@ class BlogController extends Controller
     {
         $post = Post::query()->where('slug', $slug)->firstOrFail();
         $image = Image::canvas(1200, 630, '#0D1821');
-        $image->text($post->title, 1200 / 2, 150, function ($text) {
+
+        $text = wordwrap($post->title, 25, PHP_EOL);
+
+        $image->text($text, 1200 / 2, 50, function ($text) {
             $text->file(resource_path('fonts/Comfortaa-Bold.ttf'));
             $text->align('center');
             $text->valign('top');
             $text->color('#E03616');
-            $text->size(64);
+            $text->size(70);
         });
 
-        $image->text('[Gioele Pannetto, pangio.it]', 1200 / 2, 630 - 50, function ($text) {
+        $image->text('[Gioele Pannetto, pangio.it]', 1200 / 2, 630 - 60, function ($text) {
             $text->file(resource_path('fonts/PressStart2P.ttf'));
             $text->align('center');
             $text->valign('top');
             $text->color('#008148');
-            $text->size(26);
+            $text->size(40);
         });
         return $image->response('jpg', 75);
     }
