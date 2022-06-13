@@ -39,7 +39,7 @@ class BlogController extends Controller
             $text->size(70);
         });
 
-        $image->text('[Gioele Pannetto, pangio.it]', 1200 / 2, 630 - 60, function ($text) {
+        $image->text('[Gioele Pannetto, pangio.it]', 1200 / 2, 630 - 75, function ($text) {
             $text->file(resource_path('fonts/PressStart2P.ttf'));
             $text->align('center');
             $text->valign('top');
