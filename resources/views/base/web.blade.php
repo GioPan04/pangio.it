@@ -7,6 +7,12 @@
     <meta name="og:site_name" content="Gioele Pannetto">
     <meta name="description" content="@yield('page::description', 'The official website of Gioele Pannetto')"/>
     <title>@yield('page::title') - Gioele Pannetto</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#e03616">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
     @yield('page::head')
     <link rel="stylesheet" href="{{ mix('css/web.css') }}"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
