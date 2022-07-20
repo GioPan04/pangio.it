@@ -9,10 +9,6 @@ class PagesController extends Controller
 {
     public function home(Request $request)
     {
-        $post = Post::latest()->first();
-
-        return view('pages.home', [
-            'post' => $post
-        ]);
+        return view('pages.home');
     }
 }

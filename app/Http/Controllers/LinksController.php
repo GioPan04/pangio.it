@@ -13,6 +13,6 @@ class LinksController extends Controller
             ->where('enabled', 1)
             ->firstOrFail();
 
-        return redirect($link->url);
+        return view('base.redirect', ['url' => $link->url]);
     }
 }
