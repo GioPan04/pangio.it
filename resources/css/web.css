@@ -4,12 +4,12 @@
 
 @font-face {
     font-family: 'Comfortaa';
-    src: url('/fonts/Comfortaa.tff') format("truetype");
+    src: url('/fonts/Comfortaa.ttf') format("truetype");
 }
 
 @font-face {
     font-family: 'PressStart2P';
-    src: url('/fonts/PressStart2P.tff') format("truetype");
+    src: url('/fonts/PressStart2P.ttf') format("truetype");
 }
 
 .blinking-cursor::after {
