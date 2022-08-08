@@ -15,9 +15,6 @@
     <meta name="theme-color" content="#ffffff">
     @yield('page::head')
     <link rel="stylesheet" href="{{ mix('css/web.css') }}"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body class="bg-primary text-white font-body">
 @include('common.navbar')
