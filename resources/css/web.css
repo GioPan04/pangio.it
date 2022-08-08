@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('/fonts/Comfortaa.tff') format("truetype");
+}
+
+@font-face {
+    font-family: 'PressStart2P';
+    src: url('/fonts/PressStart2P.tff') format("truetype");
+}
+
 .blinking-cursor::after {
     content: '';
     display: inline-block;

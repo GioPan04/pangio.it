@@ -14,5 +14,7 @@ yarn-error.log
 /.vscode
 
 /public/js/**/*.js
+/public/js/**/*.txt
 /public/css/**/*.css
+/public/fonts/**/*.ttf
 /public/mix-manifest.json
