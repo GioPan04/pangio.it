@@ -21,7 +21,7 @@
         <div class="flex flex-col sm:flex-row sm:space-x-14 mt-8 items-center">
             <img class="object-cover object-top rounded-full aspect-square w-72 h-72" src="/me.jpg" alt="me"/>
             <p>
-                Hi! I'm Gioele Pannetto, a 17 years old programming enthusiast boy.
+                Hi! I'm Gioele Pannetto, a {{ (new \Carbon\Carbon('2004/12/30'))->diffInYears(); }} years old programming enthusiast boy.
                 I have this passion since I was 3 years old, the year my father gifted me my first computer.
                 When I was 7 I developed my first Visual Basic script.
                 At the age of 10 I created my first website in HTML and CSS, and so on with other programming languages not only for the web.
@@ -38,7 +38,7 @@
                 'year' => 2018
             ],
             [
-                'data' => "Started working for Insegreto, an Italian social network where you can share secrets anonymously. I worked as fullstack developer, we updated the website and we beginned to working to the app.",
+                'data' => "Started working for Insegreto, an Italian social network where you can share secrets anonymously. I worked as fullstack developer, we updated the website and we began to work on the app.",
                 'year' => 2020
             ],
         ]])
