@@ -20,7 +20,7 @@
         </a>
     </li>
     <li class="opacity-50 hover:opacity-100 transition-opacity duration-200">
-        <a href="https://instagram.com/giopan.sh" target="_blank" aria-label="Instagram">
+        <a href="https://instagram.com/giopan.dev" target="_blank" aria-label="Instagram">
             <i data-feather="instagram"></i>
         </a>
     </li>
