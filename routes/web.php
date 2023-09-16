@@ -10,11 +10,9 @@ Route::prefix('/blog')->group(function () {
     Route::get('/{slug}/thumbnail', 'BlogController@thumbnail')->name('blog::show::thumbnail');
 });
 
+Route::get('/tracks', 'SongsController@index')->name('tracks');
+
 Route::view('/auth/login', 'pages.login')->name('login');
 Route::post('/auth/login', 'AuthController@authenticate');
-
-Route::group(['middleware' => 'auth', 'prefix' => '/dashboard'], function () {
-    Route::view('/', 'pages.dashboard.home')->name('dashboard::index');
-});
 
 Route::redirect('/wp-admin', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
