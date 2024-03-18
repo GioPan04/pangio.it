@@ -1,3 +1,7 @@
+> [!IMPORTANT]  
+> This version of the website it's not online anymore. I rewrote it in a different language, see [here](https://github.com/GioPan04/giopan.dev)
+
+
 # [pangio.it](https://pangio.it/)
 
 My personal website built with [Laravel](https://github.com/laravel/laravel) and [TailwindCSS](https://github.com/tailwindlabs/tailwindcss).
